@@ -7,21 +7,76 @@
 */
 
 body {
-  color: $bodyColor;
+  background-color: $bodyColor;
 }
 
-.top-bar {
-  color: $topbarColor;
+.wrap {
+  margin: 10px auto 20px auto;
+}
+
+.top-bar, .top-bar-right, a {
+  background-color: $topbarColor;
 }
 
 h1, h2, h3, h4 {
+  font-family: $titleFont;
   color: $titleColor;
 }
 
 p {
+  font-family: $textFont;
   color: $fontColor;
 }
 
 a {
+  font-family: $textFont;
   color: $linkColor;
+  &:hover {
+    font-color: darken($linkColor, 15%);
+  }
+}
+
+.fa {
+  text-align: center;
+  font-size: 22pt;
+  color: $iconColor;
+}
+
+#about {
+  text-align: center;
+  max-width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  img {
+    box-shadow: 15px 15px $accentColor;
+  }
+  p {
+    background-color: $accentColor;
+    padding: 10px;
+    vertical-align: middle;
+  }
+}
+
+#tech-skills, #soft-skills, #work-title, #learning-title {
+  h4 {
+    margin: 10px auto 40px 10px;
+  }
+}
+
+#work-card, #skill-card {
+  text-align: center;
+}
+
+#learning-card {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#education {
+  margin-bottom: 60px;
+}
+
+#contact {
+  text-align: center;
+  padding: 50px auto;
 }
