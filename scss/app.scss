@@ -11,7 +11,7 @@ body {
 }
 
 .wrap {
-  margin: 10px auto 20px auto;
+  margin: 10px 60px;
 }
 
 .top-bar, .top-bar-right, a {
@@ -30,16 +30,22 @@ p {
 
 a {
   font-family: $textFont;
-  color: $linkColor;
-  &:hover {
-    font-color: darken($linkColor, 15%);
-  }
 }
 
 .fa {
   text-align: center;
   font-size: 22pt;
   color: $iconColor;
+  text-shadow: 3px 3px $accentColor;
+}
+
+.top-bar-right {
+  .fa {
+    &:hover {
+      color: darken($iconColor, 15%);
+      text-shadow: 3px 3px darken($accentColor, 15%);
+    }
+  }
 }
 
 #about {
@@ -48,18 +54,13 @@ a {
   height: 400px;
   margin: 50px auto;
   img {
-    box-shadow: 15px 15px $accentColor;
+    -webkit-box-shadow: 15px 15px $accentColor;
+            box-shadow: 15px 15px $accentColor;
   }
   p {
     background-color: $accentColor;
     padding: 10px;
     vertical-align: middle;
-  }
-}
-
-#tech-skills, #soft-skills, #work-title, #learning-title {
-  h4 {
-    margin: 10px auto 40px 10px;
   }
 }
 
@@ -72,11 +73,20 @@ a {
   margin-bottom: 50px;
 }
 
-#education {
-  margin-bottom: 60px;
-}
-
 #contact {
   text-align: center;
   padding: 50px auto;
+}
+
+.button {
+  margin: 50px auto;
+  font-family: $textFont;
+  background-color: $iconColor;
+  -webkit-box-shadow: 10px 10px $accentColor;
+          box-shadow: 10px 10px $accentColor;
+          &:hover {
+            background-color: darken($iconColor, 15%);
+            -webkit-box-shadow: 10px 10px darken($accentColor, 15%);
+                    box-shadow: 10px 10px darken($accentColor, 15%);
+          }
 }
