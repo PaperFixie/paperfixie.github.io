@@ -40,6 +40,9 @@ a {
 }
 
 .top-bar-right {
+  ul {
+    background-color: white;
+  }
   .fa {
     &:hover {
       color: darken($iconColor, 15%);
@@ -54,8 +57,10 @@ a {
   height: 400px;
   margin: 50px auto;
   img {
+    border-right: 10px solid $iconColor;
     -webkit-box-shadow: 15px 15px $accentColor;
             box-shadow: 15px 15px $accentColor;
+    margin-bottom: 50px;
   }
   p {
     background-color: $accentColor;
