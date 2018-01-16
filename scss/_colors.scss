@@ -1,14 +1,14 @@
-/* Template for changing all colors quickly */
+// Template for changing all colors quickly
 
-/* Layout colors */
+// Layout colors
 
-$bodyColor: #EFEFEF;
-$topbarColor: white;
-$iconColor: #FF3B3F;
-$accentColor: #CAEBF2;
+$bodyColor: #2f3131;
+$topbarColor: #f8f1e5;
+$iconColor: #426e86;
+$accentColor: #f9ba32;
 
-/* Text colors */
+// Text colors
 
-$fontColor: darken(#A9A9A9, 35%);
-$titleColor: $fontColor;
+$fontColor: #f8f1e5;
+$titleColor: $accentColor;
 $linkColor: blue;
