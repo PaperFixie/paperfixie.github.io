@@ -2,13 +2,13 @@
 
 /* Layout colors */
 
-$bodyColor: #EFEFEF;
-$topbarColor: white;
-$iconColor: #FF3B3F;
-$accentColor: #CAEBF2;
+$bodyColor: #FEF3E2;
+$topbarColor: lighten(#FA812F, 10%);
+$accentColor: #FAAF08;
+$iconColor: #FA4032;
 
 /* Text colors */
 
 $fontColor: darken(#A9A9A9, 35%);
-$titleColor: $fontColor;
+$titleColor: $bodyColor;
 $linkColor: blue;
